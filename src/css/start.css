@@ -1,0 +1,166 @@
+.table-fluid {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.3rem;
+    border-top: 1px solid var(--primary-color);
+    font-weight: 700;
+    padding: 15px;
+}
+
+td,
+th {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+td {
+    color: var(--secondary-color);
+}
+
+th[scope="col"]:first-of-type {
+    text-align: left;
+}
+
+th[scope="col"] {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+th[scope="row"] {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+thead {
+    tr {
+        border-top: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+    }
+}
+
+tbody {
+    tr:nth-child(odd) {
+        background-color: var(--quaternary-color);
+
+        a {
+            color: var(--secondary-color);
+            border-bottom: 1px dotted var(--secondary-color);
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--primary-color);
+        }
+    }
+}
+
+tfoot {
+    border-bottom: 1px solid var(--primary-color);
+
+    td {
+        text-align: left;
+        font-size: 0.8rem;
+    }
+}
+
+.aims-img {
+    border: solid 1px var(--quaternary-color);
+    font-size: small;
+    float: right;
+    width: 152px;
+    margin-left: 12px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        width: 252px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+
+        @media (min-width: 768px) {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+#groupmame svg {
+    width: 100%;
+}
+
+#groupmame svg text {
+    font-family: sans-serif;
+    font-size: 110px;
+    font-weight: bold;
+    fill: rgba(69, 63, 120, 0.2);
+    stroke-width: 3px;
+    stroke: var(--ternary-color);
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate-reverse infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#animacio svg {
+    fill: currentColor;
+    max-height: 48px;
+    margin: 0 auto;
+    height: auto !important;
+    width: auto !important;
+    display: block;
+    max-width: 100%;
+}
+
+.bars-loader .morphing-bar {
+    transform-origin: center;
+    animation: morphingBar var(--loader-animation-speed) ease-in-out infinite;
+}
+
+.bars-loader .morphing-bar-left {
+    animation-delay: calc(var(--loader-animation-speed) / 2.5);
+}
+
+.bars-loader .morphing-bar-center {
+    animation-delay: calc(var(--loader-animation-speed) / 5);
+}
+
+.bars-loader .morphing-bar-right {
+    animation-delay: calc(var(--loader-animation-speed) / 7.5);
+}
+
+@keyframes morphingBar {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(0.5);
+    }
+}
