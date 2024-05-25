@@ -151,3 +151,11 @@ tfoot {
         transform: scaleY(0.5);
     }
 }
+
+.goat {
+    max-width: 50%;
+    margin: auto;
+    @media (min-width: 768px) {
+        max-width: 25%;
+    }
+}
