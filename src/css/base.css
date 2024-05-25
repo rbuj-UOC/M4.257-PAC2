@@ -86,8 +86,18 @@ ul {
 
 main {
     min-height: calc(100vh - 170px);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    @media (min-width: 576px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 .paper {
@@ -97,20 +107,23 @@ main {
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 8px;
+    padding-left: 8px;
     width: 100%;
 
     @media (min-width: 576px) {
-        max-width: 540px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
 
     @media (min-width: 768px) {
-        max-width: 720px;
+        padding-right: 24px;
+        padding-left: 24px;
     }
 
     @media (min-width: 992px) {
-        max-width: 960px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     @media (min-width: 1200px) {
@@ -125,10 +138,12 @@ header {
     background-position: center;
     background-size: cover;
     background-image: image-set(url("../img/header.webp?width=576") 1x, url("../img/header.webp?width=1152") 2x);
-    @media (min-width: 576px)  {
+
+    @media (min-width: 576px) {
         background-image: image-set(url("../img/header.webp?width=768") 1x, url("../img/header.webp?width=1536") 2x);
     }
-    @media (min-width: 768px)  {
+
+    @media (min-width: 768px) {
         background-image: image-set(url("../img/header.webp?width=1280") 1x, url("../img/header.webp") 2x);
     }
 
@@ -277,19 +292,6 @@ footer {
         li:last-child {
             padding-right: 0;
         }
-    }
-}
-
-.intro {
-    font-size: 1.1rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-
-    @media (min-width: 768px) {
-        font-size: 1.5rem;
-        margin: 3rem auto;
-        width: 75%;
     }
 }
 

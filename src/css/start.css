@@ -100,29 +100,16 @@ tfoot {
     }
 }
 
-#groupmame svg {
-    width: 100%;
-}
+.intro {
+    font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 
-#groupmame svg text {
-    font-family: sans-serif;
-    font-size: 110px;
-    font-weight: bold;
-    fill: rgba(69, 63, 120, 0.2);
-    stroke-width: 3px;
-    stroke: var(--ternary-color);
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s linear alternate-reverse infinite;
-}
-
-@keyframes dash {
-    from {
-        stroke-dashoffset: 1000;
-    }
-
-    to {
-        stroke-dashoffset: 0;
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+        margin: 0.5rem auto;
+        width: 75%;
     }
 }
 
