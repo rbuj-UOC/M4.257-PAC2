@@ -30,6 +30,6 @@
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^2.0.1",
     "rimraf": "^5.0.7",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.1"
   }
 }
