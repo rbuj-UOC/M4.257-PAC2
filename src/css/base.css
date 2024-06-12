@@ -147,22 +147,6 @@ header {
     background-image: image-set(url("../img/header.webp?width=1280") 1x, url("../img/header.webp") 2x);
   }
 
-  a.logo {
-    color: white;
-    font-family: "Protest Revolution", sans-serif;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 400;
-
-    @media (min-width: 576px) {
-      font-size: 3rem;
-    }
-  }
-
-  a.logo:hover {
-    color: var(--primary-color);
-  }
-
   img:hover {
     opacity: 0.7;
   }
