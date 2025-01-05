@@ -14,6 +14,7 @@
   "author": "Robert Buj <rbuj@uoc.edu>",
   "license": "CC0-1.0",
   "description": "",
+  "private": true,
   "@parcel/transformer-css": {
     "drafts": {
       "nesting": true
@@ -36,7 +37,8 @@
     "posthtml-include": "^2.0.1",
     "prettier": "^3.4.1",
     "rimraf": "^6.0.1",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2"
   },
   "dependencies": {
     "photoswipe": "^5.4.4",
