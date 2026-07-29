@@ -8,7 +8,7 @@ Boilerplate for parcel
 
 Establir les opcions predeterminades quan es crea un nou fitxer [package.json](./package.json):
 
-```
+```shell
 npm config set init-author-email "rbuj@uoc.edu"
 npm config set init-author-name "Robert Buj"
 npm config set init-license "CC0-1.0"
@@ -16,19 +16,19 @@ npm config set init-license "CC0-1.0"
 
 Crea un nou fitxer [package.json](./package.json):
 
-```
+```shell
 npm init --yes
 ```
 
 ## ESLint
 
-```
+```shell
 npm init @eslint/config@latest
 ```
 
 ## Prettier
 
-```
+```shell
 npm install --save-dev prettier
 ```
 
@@ -48,7 +48,7 @@ Afegir les opcions de formatació al fitxer [.prettierrc.json](.prettierrc.json)
 
 Evitar el tancament d'etiquetes void quam es dona format a documents html amb Prettier:
 
-```
+```shell
 npm install --save-dev @awmottaz/prettier-plugin-void-html
 ```
 
@@ -64,7 +64,7 @@ Afegir el connector al fitxer [.prettierrc.json](.prettierrc.json)
 
 ### eslint-config-prettier
 
-```
+```shell
 npm install --save-dev eslint-config-prettier
 ```
 
@@ -78,7 +78,7 @@ export default [eslintConfigPrettier];
 
 ## Parcel
 
-```
+```shell
 npm install --save-dev parcel rimraf npm-run-all
 ```
 
@@ -156,13 +156,13 @@ Modificar la secció `scripts` del fitxer [package.json](./package.json)
 3. Seleccionar `Web App (Chrome)`
 4. Afegir la línia
 
-```
+```json
 "preLaunchTask": "npm: start",
 ```
 
 5. Canviar el port
 
-```
+```json
 "url": "http://localhost:1234",
 ```
 
@@ -173,6 +173,6 @@ Executar la tasca `npm start` al rerefons
 3. Seleccionar `npm: start`
 4. Afegir la línia
 
-```
+```json
 "isBackground": true
 ```
